@@ -1,16 +1,17 @@
 import React from 'react'
 import { ItemNavbar } from '../ItemNavbar/ItemNavbar'
+
 export const Navbar = () => {
   return (
     
     <nav>
      
         <ul className='Menu'>
-            <ItemNavbar Contenido="Home"/>
-            <ItemNavbar Contenido="Technical Skills"/>
-            <ItemNavbar Contenido="Social skills"/>
-            <ItemNavbar Contenido="Education"/>
-            <ItemNavbar Contenido="Experiences"/>
+            <ItemNavbar Contenido="Home" to="/"/>
+            <ItemNavbar Contenido="Technical Skills" to="/TechnicalSkills"/>
+            <ItemNavbar Contenido="Social skills"  to="/SocialSkills"/>
+            <ItemNavbar Contenido="Education" to="/Education"/>
+            <ItemNavbar Contenido="Experiences"  to="/Experiences"/>
         </ul>
     </nav>
   )

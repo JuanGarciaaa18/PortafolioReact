@@ -1,10 +1,10 @@
 import React from 'react'
-
-export const ItemNavbar = ({Contenido}) => {
+import { NavLink } from 'react-router-dom'
+export const ItemNavbar = ({Contenido,to}) => {
   return (
     <>
     
-            <li><a href=''>{Contenido}</a></li>
+            <li><NavLink to={to}>{Contenido}</NavLink></li>
             
     </>
   )
