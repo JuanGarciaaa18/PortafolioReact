@@ -1,0 +1,70 @@
+.skills-title {
+    text-align: center; /* Centra el texto */
+    font-size: 2.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #2a3d63; /* Color azul del header */
+    margin-bottom: 30px; /* Espaciado debajo del título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 30px; /* Espaciado entre los íconos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+    padding: 20px; /* Espaciado interno */
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y la barra de progreso en columna */
+    align-items: center; /* Centra la imagen y la barra horizontalmente */
+    margin: 15px; /* Espaciado entre los íconos */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #2a3d63; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+}
+
+.image-wrapper:hover {
+    transform: translateY(-5px); /* Eleva ligeramente el contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+.image-wrapper img {
+    width: 200px; /* Tamaño de la imagen */
+    height: 180px;
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    margin-bottom: 10px; /* Espaciado entre la imagen y la barra */
+}
+
+.progress-bar {
+    width: 180px; /* Ancho de la barra de progreso */
+    height: 12px; /* Altura de la barra de progreso */
+    background-color: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el progreso no se salga de los bordes */
+    margin-top: 10px; /* Espaciado entre la imagen y la barra */
+}
+
+.progress-bar-fill {
+    height: 100%; /* Llena toda la altura de la barra */
+    width: 70%; /* Cambia este valor para ajustar el progreso (porcentaje) */
+    background-color: #2a3d63; /* Cambiado al color azul */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: width 0.3s ease; /* Animación suave al cambiar el progreso */
+}
+
+.progress-label {
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #2a3d63; /* Color azul */
+    margin-top: 5px; /* Espaciado entre la barra y el texto */
+    text-align: center; /* Centra el texto */
+}

@@ -1,94 +1,138 @@
-*{
+/* General */
+* {
     margin: 0;
-    font-family: cursive;
-    font-size: 1.3rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fuente más moderna */
 }
 
+/* Header */
+header {
+    background: linear-gradient(90deg, #1e3a8a, #4f46e5); /* Degradado más dinámico */
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+}
 
-.Menu{
+.Menu {
     display: flex;
     list-style: none;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 5rem;
+    gap: 1.5rem;
 }
 
-li a{
-    padding: 10px 15px;
-    justify-content: space-between;
+li a {
+    padding: 12px 18px;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-header{
-    background-color: #2a3d63;
-    min-height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    padding: 0 20px;
+li a:hover {
+    background: #ffcc00;
+    color: #1e3a8a;
+    transform: scale(1.1);
 }
 
-.img-body{
+/* Body */
+.body {
+    background: linear-gradient(135deg, #eef2ff, #c7d2fe);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5; 
+    padding: 3rem;
+    min-height: 100vh;
 }
 
-img{
-    height: 17rem;
-    width: 14rem;
+.img-body img {
+    background-color: #ffffff;
+    height: 18rem;
+    width: 15rem;
     margin-top: 2rem;
-    border-radius: 70%;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.description{
+.img-body img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.description {
     text-align: center;
-    margin-left: 5rem;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    color: #222;
 }
-.name{
-    margin-bottom: 2rem;
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1.2rem;
 }
-.body{
-    background-color: #f5f5f5; 
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1e3a8a, #4f46e5);
+    color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5; 
-    height: 35rem;
-}
-
-footer{
-    background-color: #2a3d63;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    height: 7.95rem;
-
+    padding: 2rem 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.Social-media{
-   list-style: none;
+.Social-media {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    color: white;
+    gap: 1.2rem;
+    margin-top: 1rem;
 }
 
-.Social-media li img{
-    justify-content: space-between;
-    color: white;
-    text-decoration: none;
-    height: 2.6rem;
-    width: 4rem;
+.Social-media li img {
+    height: 3rem;
+    width: 3rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-.imageUrl{
-    color: white;
+
+.Social-media li img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.education-card {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: 3px solid #ff3d68;
+    border-radius: 18px;
+    padding: 2rem;
+    width: 320px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #ff3d68, #ff9a9e);
+}
+
+.education-card h2 {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    font-size: 1.1rem;
+    color: #ffffff;
 }

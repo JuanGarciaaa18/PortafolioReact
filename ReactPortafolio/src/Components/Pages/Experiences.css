@@ -1,0 +1,20 @@
+.experience-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 2rem; /* Espaciado interno */
+    margin: 2rem auto; /* Espaciado externo */
+    max-width: 900px; /* Limita el ancho del contenedor */
+    background: linear-gradient(135deg, #eef2ff, #c7d2fe); /* Fondo degradado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.experience-title {
+    text-align: center; /* Centra el texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #2a3d63; /* Azul oscuro */
+    line-height: 1.8; /* Espaciado entre líneas */
+    padding: 1rem; /* Espaciado interno */
+}
